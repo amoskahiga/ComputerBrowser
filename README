@@ -4,5 +4,7 @@ Requirements:
 1.  Microsoft .NET 2.0 Runtime (required to run the application).
 2.  WMI (required on the remote computer; should be available in Windows-2000 and newer)
 
-You must have Administrative privileges on the queried computer.  The ‘Runas’ command may be used to launch the application with different running privileges.
+You must have Administrative privileges on the queried computer.  The 'Runas' command may be used to launch the application with different running privileges.
 
+Homepage: <http://github.com/amoskahiga/ComputerBrowser>
+Author: Amos Kariuki <amoskahiga@gmail.com>
