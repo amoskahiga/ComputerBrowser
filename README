@@ -1,0 +1,8 @@
+ComputerBrowser is a .NET application that queries a local or remote computer for its operating or hardware configuration.  It uses the Windows Management Instrumentation (WMI) service to obtain the queried configuration. Information obtained includes Memory size, Operating System version, Hard Disk size, installed Printers etc...
+
+Requirements:
+1.  Microsoft .NET 2.0 Runtime (required to run the application).
+2.  WMI (required on the remote computer; should be available in Windows-2000 and newer)
+
+You must have Administrative privileges on the queried computer.  The ‘Runas’ command may be used to launch the application with different running privileges.
+

@@ -1,0 +1,286 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4145E3A-27F4-482C-ACE9-F0948E8073F2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ComputerBrowser</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ComputerBrowser</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>ComputerBrowser.ComputerBrowserForm</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ManifestCertificateThumbprint>01C6079D5CD9FF98E8921BF95D7D7BD959EB4344</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ComputerBrowser_TemporaryKey.pfx</ManifestKeyFile>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\AbouForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\AbouForm.Designer.cs">
+      <DependentUpon>AbouForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\AuthenticateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ComputerBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ComputerBrowserForm.Designer.cs">
+      <DependentUpon>ComputerBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ComputerFacade.cs" />
+    <Compile Include="src\ComputerSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ComputerSelectorForm.Designer.cs">
+      <DependentUpon>ComputerSelectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ComputerSystem\Computer.cs" />
+    <Compile Include="src\ComputerSystem\Processor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\ComputerSystem\System.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\ComputerView.cs">
+    </Compile>
+    <Compile Include="src\ComputerSystem\LogicalDisk.cs" />
+    <Compile Include="src\ComputerSystem\NetworkAdapter.cs" />
+    <Compile Include="src\ComputerSystem\OperatingSystem.cs" />
+    <Compile Include="src\ComputerSystem\Printer.cs" />
+    <Compile Include="src\ComputerSystem\Process.cs" />
+    <Compile Include="src\ComputerSystem\Share.cs" />
+    <Compile Include="src\Options\ComputerBrowserOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_ComputerSystem.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_LogicalDisk.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_NetworkAdapter.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_NetworkAdapterConfiguration.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_OperatingSystem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_Printer.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_Process.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_Processor.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\WMI\Win32_Share.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="src\AbouForm.resx">
+      <DependentUpon>AbouForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\AuthenticateForm.resx">
+      <DependentUpon>AuthenticateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ComputerBrowserForm.resx">
+      <DependentUpon>ComputerBrowserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ComputerSelectorForm.resx">
+      <DependentUpon>ComputerSelectorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Options\ComputerBrowserOptionsForm.resx">
+      <DependentUpon>ComputerBrowserOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_ComputerSystem.resx">
+      <DependentUpon>Win32_ComputerSystem.CS</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_LogicalDisk.resx">
+      <DependentUpon>Win32_LogicalDisk.CS</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_NetworkAdapter.resx">
+      <DependentUpon>Win32_NetworkAdapter.CS</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_NetworkAdapterConfiguration.resx">
+      <DependentUpon>Win32_NetworkAdapterConfiguration.CS</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_OperatingSystem.resx">
+      <DependentUpon>Win32_OperatingSystem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_Printer.resx">
+      <DependentUpon>Win32_Printer.CS</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_Process.resx">
+      <DependentUpon>Win32_Process.CS</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_Processor.resx">
+      <DependentUpon>Win32_Processor.CS</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\WMI\Win32_Share.resx">
+      <DependentUpon>Win32_Share.CS</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="src\Persistence\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
